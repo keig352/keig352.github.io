@@ -27,6 +27,15 @@
             <div id="profile" class="tab-content active">
                 <section>
                     <p>Security analyst with 3+ years of experience in threat detection, incident response, and customer-facing security operations. Proven expertise in EDR platforms, log analysis, and translating complex threat intelligence into actionable insights for diverse stakeholders.</p>
+                    
+                    <h3 style="color: var(--primary-color); margin-top: 20px;">Professional Journey</h3>
+                    <p>I first started off as an intern testing and applying different vulnerable applications for a college wide CTF. Working in association with the local University's Cyber Security Association, I was able to implement OWASP's Juice Shop insecure web application. The tricky part of implementing this was that we didn't know how many teams would be joining the CTF and we needed a dynamic way to spin up new instances. In order to do that, we utilized Multi-Juicer, a custom load balancer, with Google Cloud to handle these instances. When that was up and running, we tracked the various teams progression using Grafana.</p>
+                    <p>From that internship experience, I figured out that I had an interest in security and realized I needed to improve my scripting and coding skills. So naturally, I took a temporary position where the entire job was focused on coding. The purpose was so that users would have an easy reference as to what was permitted within the organization and the admins could add and remove from it as needed. The code was written in ASP.NET and connected to a SQL database. While I still consider myself a learner in development, I was able to gain a deeper understanding of logic flow, version control, and secure coding practices.</p>
+                    <p>After that, I participated in various CTFs and studied for certifications until I landed my next job as a Help Desk/NOC technician. I assisted users with basic issues like password resets and connectivity, rerouting tickets in ServiceNow, and monitoring various systems to ensure constant operation.</p>
+                    <p>With that experience, I was able to pivot to being a security analyst. I started off doing application control, ensuring that end users were executing applications that met organizational policies. As I gained more responsibility, I began triaging security alerts. I've identified several true positive threats and helped administrators remediate them, in some cases stopping attacks before they could escalate. As I became more familiar with organizational structures, I began recommending policy exclusions and assisting security engineers in fine-tuning detection policies. As a Tier II analyst, I now assist in creating and testing custom tooling to improve work efficiency and develop simulations of common attacks to train fellow analysts.</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 20px;">Hobbies</h3>
+                    <p>When I need a break from the screen, I like to decompress with chess (at least until my ELO drops significantly). Otherwise, I enjoy gaming or just chilling with a good show.</p>
                 </section>
             </div>
 
@@ -39,9 +48,10 @@
                             <span>July 2024 - Present</span>
                         </div>
                         <ul>
-                            <li>Triage detections and provide remediation when necessary</li>
-                            <li>Create simulations of frequently seen attacks</li>
-                            <li>Assist in fine-tuning alert detections</li>
+                            <li>Triage security alerts for various organizations, identifying true positive threats and stopping attacks before escalation.</li>
+                            <li>Perform application control and provide recommendations for detection policy exclusions based on organizational structures.</li>
+                            <li>Tier II: Assist in creating and testing custom tooling to improve work efficiency and quality.</li>
+                            <li>Create simulations of commonly seen attacks to test and train Tier I and fellow Tier II analysts.</li>
                         </ul>
                     </div>
 
@@ -51,9 +61,8 @@
                             <span>September 2023 - July 2024</span>
                         </div>
                         <ul>
-                            <li>Provision devices for several organizations</li>
-                            <li>Assist co-workers with technical difficulties</li>
-                            <li>Monitor and report on various systems to ensure constant operation</li>
+                            <li>Assisted users with password resets, connectivity issues, and rerouting tickets via ServiceNow.</li>
+                            <li>Provisioned devices for multiple organizations and monitored systems to ensure constant operation.</li>
                         </ul>
                     </div>
 
@@ -63,9 +72,9 @@
                             <span>April 2021 - July 2021</span>
                         </div>
                         <ul>
-                            <li>Experiment with vulnerable applications for use in a CTF event</li>
-                            <li>Test and configure the chosen application in a cloud environment to ensure functionality</li>
-                            <li>Report on successes and issues relating to the development and execution of the CTF</li>
+                            <li>Implemented OWASP's Juice Shop for a college-wide CTF in association with the University's Cyber Security Association.</li>
+                            <li>Deployed Multi-Juicer and a custom load balancer on Google Cloud to handle dynamic instance scaling for teams.</li>
+                            <li>Configured Grafana dashboards to track team progression and system performance during the event.</li>
                         </ul>
                     </div>
                 </section>
@@ -96,7 +105,36 @@
             <div id="projects" class="tab-content">
                 <section>
                     <div class="project-item">
-                        <p><em>Coming soon... I am currently working on documenting my recent security and development projects.</em></p>
+                        <div class="item-header">
+                            <span>PowerShell Enumeration Script</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Purpose:</strong> To become more familiar with PowerShell.</p>
+                            <p><strong>Current Status:</strong></p>
+                            <ul>
+                                <li>Grabs basic user information and the groups they are in.</li>
+                                <li>Identifies firewall profile settings.</li>
+                                <li>Lists applications currently running on the device.</li>
+                            </ul>
+                            <p><strong>Next Steps:</strong></p>
+                            <ul>
+                                <li>Gather security policies via <code>secedit</code>.</li>
+                                <li>Implement functionality to view open ports.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span>Sliver C2</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Purpose:</strong> Understand how C2 communication looks within EDR telemetry and gain a better understanding of TA tactics.</p>
+                            <p><strong>Current Status:</strong> Able to host the payload on an internal Ubuntu device and have a windows client download it.</p>
+                            <p><strong>Next Steps:</strong> Investigate ways for the payload to avoid detection via stagers.</p>
+                        </div>
                     </div>
                 </section>
             </div>

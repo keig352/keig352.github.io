@@ -109,6 +109,23 @@ section h2 {
     border-bottom: 1px solid #eee;
 }
 
+.project-details {
+    margin-top: 10px;
+}
+
+.project-details p {
+    margin: 5px 0;
+}
+
+.project-details ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.project-details strong {
+    color: var(--primary-color);
+}
+
 .experience-item:last-child, .education-item:last-child, .project-item:last-child {
     border-bottom: none;
 }
